@@ -1,0 +1,20 @@
+{
+  "name": "auth-header-injector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "build-docker": "docker build -t eux86/auth-header-injector ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-proxy": "^1.18.0",
+    "http-proxy-middleware": "^0.20.0",
+    "request": "^2.88.0"
+  }
+}
