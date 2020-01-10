@@ -39,6 +39,7 @@ const apiProxy = proxy({
     onProxyRes: (proxyRes, req, res) => {
         if (proxyRes.statusCode === 401) {
             updateToken();
+            res.redirect('/');
         }
     },
 });
